@@ -3,7 +3,7 @@ In a situation for training yolo using a coco dataset, we need a script for conv
 
 For example, i'm trying to use the COCO2017 dataset.
 
-1. # Create a new conda environment
+# Create a new conda environment
 conda create -n yolo-coco python=3.10 -y #or you may use another version of python
 
 # Activate the environment
