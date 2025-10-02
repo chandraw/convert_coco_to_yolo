@@ -14,12 +14,16 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 conda install opencv pandas numpy matplotlib tqdm pillow -y
 pip install ultralytics albumentations
 
-2. run the download_coco.py . It will download the coco dataset (train2017.zip, val2017.zip, annotations_trainval2017.zip), make some directory (images and labels), then extract the downloaded zip files.
-3. download or create coco.yaml and adjust the dataset root dir!
-4. run convert_coco_to_yolo.py
-5. run train_yolo.py
+# Run the download_coco.py . It will download the coco dataset (train2017.zip, val2017.zip, annotations_trainval2017.zip), make some directory (images and labels), then extract the downloaded zip files.
 
-why i post this? Frustating from the warning when training the yolo:
+# Download or create coco.yaml and adjust the dataset root dir!
+# Run convert_coco_to_yolo.py
+python convert_coco_to_yolo.py
+
+# Run train_yolo.py
+python train_yolo.py
+
+# Why i post this? Frustating from the warning when training the yolo:
 - (0 images, 118287 backgrounds, 0 corrupt)
 - labels are missing or empty in working directory
 
