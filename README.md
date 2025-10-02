@@ -3,24 +3,25 @@ In a situation for training yolo using a coco dataset, we need a script for conv
 
 For example, i'm trying to use the COCO2017 dataset.
 
-# Create a new conda environment
+1. Create a new conda environment
 conda create -n yolo-coco python=3.10 -y #or you may use another version of python
 
-# Activate the environment
+2. Activate the environment
 conda activate yolo-coco
 
-# Install basic dependencies including the ultralytics-yolo
+3. Install basic dependencies including the ultralytics-yolo
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
 conda install opencv pandas numpy matplotlib tqdm pillow -y
 pip install ultralytics albumentations
 
-# Run the download_coco.py . It will download the coco dataset (train2017.zip, val2017.zip, annotations_trainval2017.zip), make some directory (images and labels), then extract the downloaded zip files.
+4. Run the download_coco.py . It will download the coco dataset (train2017.zip, val2017.zip, annotations_trainval2017.zip), make some directory (images and labels), then extract the downloaded zip files.
 
-# Download or create coco.yaml and adjust the dataset root dir!
-# Run convert_coco_to_yolo.py
+5. Download or create coco.yaml and adjust the dataset root dir!
+
+6. Run convert_coco_to_yolo.py
 python convert_coco_to_yolo.py
 
-# Run train_yolo.py
+7. Run train_yolo.py
 python train_yolo.py
 
 # Why i post this? Frustating from the warning when training the yolo:
